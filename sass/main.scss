@@ -1,0 +1,24 @@
+// BASE
+@import './utils/colors';
+@import './utils/variables';
+@import './components/base';
+
+// TOTAL
+@import './components/page-header';
+@import './components/logo';
+@import './components/footer';
+
+// STUDIO
+@import './components/hero';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/forms';
+@import './components/features';
+@import './components/work';
+@import './components/family';
+@import './components/social-card';
+@import './components/clients';
+
+// PORTFOLIO
+@import './components/proekts';
+@import './components/card-set';

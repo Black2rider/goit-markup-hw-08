@@ -1,0 +1,53 @@
+.family {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: getColor('background-family');
+}
+
+.family__list {
+  display: flex;
+}
+
+.family__item {
+  flex-basis: calc((100% - 30px) / 4);
+  margin-right: 30px;
+  border-radius: 0px 0px 4px 4px;
+  background-color: getColor('primary');
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  & img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+.family__content {
+  padding: 30px 32px;
+}
+
+.family__name {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: getColor('secondary');
+}
+
+.family__proffesion {
+  margin-bottom: 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: getColor('grey');
+}
