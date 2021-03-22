@@ -1,0 +1,41 @@
+.proekts {
+  padding: 94px 0;
+}
+
+.filter {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.filter__item:not(:last-child) {
+  margin-right: 6px;
+}
+
+.filter__btn {
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+
+  color: getColor('secondary');
+  background: getColor('background-family');
+
+  transition: color 250ms $timing-function,
+    background-color 250ms $timing-function,
+    box-shadow 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      color: getColor('primary');
+      background-color: getColor('accent');
+      box-shadow: 0px 1px 1px rgba(97, 32, 32, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}

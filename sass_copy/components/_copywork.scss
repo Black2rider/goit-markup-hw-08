@@ -1,0 +1,38 @@
+.work {
+  padding-bottom: 94px;
+}
+
+.work__list {
+  display: flex;
+}
+
+.work__item {
+  padding-right: 30px;
+  z-index: -1;
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  & img {
+    display: block;
+  }
+}
+
+.work__content {
+  position: relative;
+}
+
+.work__desc {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 370px;
+  height: 70px;
+  padding-top: 27px;
+
+  text-align: center;
+  color: getColor('primary');
+  background-color: getColor('background-work');;
+}

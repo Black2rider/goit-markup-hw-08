@@ -1,0 +1,124 @@
+.footer {
+  background-color: getColor('background-footer');
+  padding: 60px 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.address {
+  margin-right: 70px;
+}
+
+.logo__footer {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: getColor('primary');
+}
+
+.address__items:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  display: inline-block;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: getColor('primary');
+
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+  color: getColor('accent');
+}
+}
+
+.address__contacts {
+  color: getColor('footer-input-placeholder');
+}
+
+/* --- ПРИСОЕДИНЯЙТЕСЬ --- */
+
+.join {
+  min-width: 206px;
+}
+
+.join__title {
+  margin-bottom: 20px;
+  color: getColor('primary');
+}
+
+.join .social-card__link {
+  background-color: getColor('background-social-footer');
+  color: getColor('primary');
+
+  transition: background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+  background-color: getColor('accent');
+}
+}
+
+/* --- SIGN --- */
+
+.sign {
+  min-width: 570px;
+  margin-top: 15px;
+  margin-left: 93px;
+}
+
+.sign__title {
+  color: getColor('primary');
+  margin-bottom: 24px;
+}
+
+.sign__input {
+  min-width: 358px;
+  padding: 14px 16px;
+  margin-right: 12px;
+  color: getColor('primary');
+  background-color: getColor('background-footer');
+  border: 1px solid getColor('footer-input-placeholder');
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.sign__input:placeholder-shown {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: getColor('footer-input-placeholder');
+}
+
+.sign__btn {
+  display: inline-flex;
+  align-items: center;
+  min-width: 200px;
+  padding: 10px 32px;
+
+  cursor: pointer;
+  border-radius: 4px;
+  color: getColor('primary');
+  background-color: getColor('accent');
+}
+
+.sign__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.sign__icon {
+  margin-left: 10px;
+}

@@ -1,0 +1,35 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clients__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+
+  color: getColor('border-clients');
+  fill: currentColor;
+
+  border: 1px solid getColor('border-clients');
+  border-radius: 4px;
+
+  transition: color 250ms $timing-function,
+  background-color 250ms $timing-function,
+  border 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+  background-color: getColor('primary');
+  color: getColor('accent');
+  border: 1px solid getColor('accent');
+}
+}
