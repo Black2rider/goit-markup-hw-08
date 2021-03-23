@@ -1,29 +1,29 @@
-.footer {
+.page-footer {
   background-color: getColor('background-footer');
   padding: 60px 0;
 }
 
-.footer-container {
+.page-footer__container {
   display: flex;
   align-items: baseline;
 }
 
-.address {
+.page-address {
   margin-right: 70px;
 }
 
-.logo__footer {
+.page-footer__logo {
   display: inline-block;
   margin-bottom: 20px;
 
   color: getColor('primary');
 }
 
-.address__items:not(:last-child) {
+.page-address__items:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.address__link {
+.page-address__link {
   display: inline-block;
 
   font-style: normal;
@@ -41,7 +41,7 @@
 }
 }
 
-.address__contacts {
+.page-address__contacts {
   color: getColor('footer-input-placeholder');
 }
 

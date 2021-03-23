@@ -1,14 +1,14 @@
-.family {
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: getColor('background-family');
 }
 
-.family__list {
+.team__list {
   display: flex;
 }
 
-.family__item {
+.team__item {
   flex-basis: calc((100% - 30px) / 4);
   margin-right: 30px;
   border-radius: 0px 0px 4px 4px;
@@ -26,11 +26,11 @@
   }
 }
 
-.family__content {
+.team__content {
   padding: 30px 32px;
 }
 
-.family__name {
+.team__name {
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -41,7 +41,7 @@
   color: getColor('secondary');
 }
 
-.family__proffesion {
+.team__proffesion {
   margin-bottom: 16px;
 
   font-weight: 400;
