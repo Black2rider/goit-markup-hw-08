@@ -1,19 +1,30 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.clients__section-title {
+  margin-bottom: 30px;
 }
 
 .clients__list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * 15px);
+  margin-top: calc(-1 * 15px);
+}
+
+.clients__item {
+  flex-basis: calc((100% - 30px)/2);
+  margin-left: 15px;
+  margin-top: 15px;
 }
 
 .clients__link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 90px;
 
   color: getColor('border-clients');
