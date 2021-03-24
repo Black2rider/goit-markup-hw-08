@@ -1,0 +1,120 @@
+.page-footer__container {
+  background-color: getColor('background-footer');
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.page-address {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.page-footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: getColor('primary');
+}
+
+.page-address__items:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.page-address__link {
+  display: inline-block;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: getColor('primary');
+
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+  color: getColor('accent');
+}
+}
+
+.page-address__contacts {
+  color: getColor('footer-input-placeholder');
+}
+
+/* --- ПРИСОЕДИНЯЙТЕСЬ --- */
+
+.join {
+  margin-bottom: 60px;
+}
+
+.join__title {
+  margin-bottom: 20px;
+  color: getColor('primary');
+}
+
+
+.join__items:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join .social-card__link {
+  background-color: getColor('background-social-footer');
+  color: getColor('primary');
+
+  transition: background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+  background-color: getColor('accent');
+}
+}
+
+/* --- SIGN --- */
+
+.sign__title {
+  color: getColor('primary');
+  margin-bottom: 20px;
+}
+
+.sign__input {
+  padding: 16px 15px;
+  margin-bottom: 20px;
+
+  color: getColor('primary');
+  background-color: getColor('background-footer');
+  border: 1px solid getColor('footer-input-placeholder');
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.sign__input:placeholder-shown {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: getColor('footer-input-placeholder');
+}
+
+.sign__btn {
+  display: flex;
+  align-items: center;
+  min-width: 200px;
+  padding: 10px 29px;
+
+  cursor: pointer;
+  border-radius: 4px;
+  color: getColor('primary');
+  background-color: getColor('accent');
+}
+
+.sign__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.sign__icon {
+  margin-left: 10px;
+}

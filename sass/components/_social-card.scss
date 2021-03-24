@@ -1,14 +1,15 @@
 .social-card {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .social-card__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   width: 44px;
   height: 44px;
-  padding: 12px;
 
   color: getColor('grey');
   background-color: getColor('primary');
@@ -28,3 +29,4 @@
   display: inline-block;
   fill: currentColor;
 }
+
