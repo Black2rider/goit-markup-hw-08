@@ -72,12 +72,23 @@
 
 /* --- SIGN --- */
 
+.sign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .sign__title {
   color: getColor('primary');
   margin-bottom: 20px;
 }
 
+.sign__label {
+  margin: 0;
+}
+
 .sign__input {
+  width: 100%;
   padding: 16px 15px;
   margin-bottom: 20px;
 
@@ -102,17 +113,15 @@
   min-width: 200px;
   padding: 10px 29px;
 
-  cursor: pointer;
-  border-radius: 4px;
-  color: getColor('primary');
-  background-color: getColor('accent');
-}
-
-.sign__text {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
+  cursor: pointer;
+  border-radius: 4px;
+  color: getColor('primary');
+  background-color: getColor('accent');
 }
 
 .sign__icon {

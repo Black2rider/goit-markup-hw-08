@@ -47,17 +47,11 @@ p {
 
 @media (min-width: 480px) {
   .container {
-    max-width: 480px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
     max-width: 768px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .container {
     max-width: 1200px;
   }
@@ -207,12 +201,30 @@ p {
 }
 
 /* --- SIGN --- */
+.sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .sign__title {
   color: #ffffff;
   margin-bottom: 20px;
 }
 
+.sign__label {
+  margin: 0;
+}
+
 .sign__input {
+  width: 100%;
   padding: 16px 15px;
   margin-bottom: 20px;
   color: #ffffff;
@@ -240,17 +252,14 @@ p {
           align-items: center;
   min-width: 200px;
   padding: 10px 29px;
-  cursor: pointer;
-  border-radius: 4px;
-  color: #ffffff;
-  background-color: #2196f3;
-}
-
-.sign__text {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 .sign__icon {
@@ -407,7 +416,6 @@ p {
 }
 
 .form__label {
-  margin-bottom: 4px;
   text-align: left;
   font-weight: normal;
   font-size: 12px;
@@ -422,7 +430,7 @@ p {
 
 .form__input {
   width: 100%;
-  margin: 0;
+  margin-top: 4px;
   padding: 11px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -549,6 +557,21 @@ textarea::placeholder {
   padding: 60px 0;
 }
 
+.features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: calc(-1 * 30px);
+  margin-top: calc(-1 * 30px);
+}
+
+.features__list img {
+  display: block;
+  max-width: 100%;
+}
+
 .features__items {
   margin-bottom: 30px;
 }
@@ -557,19 +580,19 @@ textarea::placeholder {
   margin-right: 0px;
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+  .features__items {
+    -ms-flex-preferred-size: calc(100% / 2 - 15px);
+        flex-basis: calc(100% / 2 - 15px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
 .features__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 25px 190px;
+  text-align: center;
+  padding: 25px 0;
   margin-bottom: 30px;
-  background-color: #f5f4fa;
 }
 
 .features__text {
