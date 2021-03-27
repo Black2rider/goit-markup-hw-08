@@ -1,8 +1,13 @@
 .page-header {
   min-height: 60px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .menu-toggle {
@@ -19,17 +24,121 @@
   border: none;
   border-radius: 50%;
   outline: none;
+
+  @media (min-width: 768px) {
+    & {
+      display: none;
+    }
+  }
 }
 
-@media (min-width: 768px) {
-  .menu-toggle {
+.header {
+  display: flex;
+  align-items: center;
+
+  
+}
+
+.header-nav__list {
+  display: flex;
+  align-items: center;
+  margin-left: 92px;
+
+  @media (max-width: 767px) {
+    & {
+      display: none;
+    }
+  }
+}
+
+.header-nav__link--current {
+  position: relative;
+
+  color: getColor('accent');
+}
+
+.header-nav__item:not(:last-child){
+  margin-right: 50px;
+}
+
+.header-nav__link {
+  display: block;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: getColor('accent');
+  }
+}
+
+.header-nav__link--current::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+
+  background-color: getColor('accent');
+  border-radius: 2px;
+
+  transition: color 250ms $timing-function;
+}
+
+@media (max-width: 767px) {
+  .header-contacts {
     display: none;
   }
 }
 
-@media (max-width: 479px){
-.header-nav__list,
 .header-contacts {
-  display: none;
+  margin-left: auto;
+
+  @media screen and (min-width: 1200px){
+    display: flex;
+  }
 }
+
+.header-contacts__item {
+  display: flex;
+
+  @media screen and (max-width: 1199px){
+     margin-top: 10px;
+  }
+}
+
+// @media screen and (max-width: 1199px){
+//   .header-contacts__item:not(:last-child) {
+//     margin-right: 50px;
+//    }
+//   }
+
+.header-contacts__link {
+  display: inline-flex;
+  align-items: center;
+
+  color: getColor('grey');
+  transition: color 250ms var(--timing-function);
+  
+  &:hover,
+  &:focus {
+  color: getColor('accent');
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.header-contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
