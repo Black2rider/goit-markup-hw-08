@@ -661,7 +661,6 @@ p {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 93.75vw;
   height: 90vh;
   overflow-y: auto;
   background-color: #ffffff;
@@ -679,6 +678,18 @@ p {
 .hero__backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(1, 5);
           transform: translate(-50%, -50%) scale(1, 5);
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 450px;
+  }
 }
 
 .modal__close {
