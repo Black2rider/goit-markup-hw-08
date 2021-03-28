@@ -79,15 +79,7 @@
 
   transition: color 250ms var(--timing-function);
   
-  &:hover,
-  &:focus {
-  color: getColor('accent');
-  }
-
-  @media screen and (min-width: 768px)
-    & {
-      padding-top: 0;
-      padding-bottom: 0;
+  
 }
 
 .header-contacts__icon {

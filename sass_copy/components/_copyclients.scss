@@ -1,19 +1,31 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.clients__section-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .clients__link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  max-width: 210px;
   height: 90px;
 
   color: getColor('border-clients');
@@ -30,6 +42,6 @@
   &:focus {
   background-color: getColor('primary');
   color: getColor('accent');
-  border: 1px solid getColor('accent');
-}
+  border: 1px solid getColor('accent');}
+
 }

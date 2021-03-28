@@ -18,23 +18,30 @@
   </head>
   <body>
     <!--Шапка-->
-    <header class="header container">
-      <nav class="header-nav">
-        <a class="logo" href=""><span class="logo-color">Web</span>Studio</a>
+    <header class="page-header container">
+      <a class="logo" href=""><span class="logo-color">Web</span>Studio</a>
+      <button
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+    <svg class="header__icon-menu" width="24" height="16">
+      <use href="./images/sprite.svg#icon-menu"></use>
+    </svg>
+    </button>
         <ul class="header-nav__list">
           <li class="header-nav__item">
-            <a class="header-nav__link" href="./index.html">Студия</a>
+            <a class="header-nav__link" href="./index.html"
+              >Студия</a
+            >
           </li>
           <li class="header-nav__item">
-            <a class="header-nav__link header-nav__link--current" href=""
-              >Портфолио</a
-            >
+            <a class="header-nav__link header-nav__link--current" href="">Портфолио</a>
           </li>
           <li class="header-nav__item">
             <a class="header-nav__link" href="">Контакты</a>
           </li>
         </ul>
-      </nav>
       <ul class="header-contacts">
         <li class="header-contacts__item">
           <a class="header-contacts__link" href="">

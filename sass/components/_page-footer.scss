@@ -1,12 +1,35 @@
-.page-footer__container {
+.page-footer {
   background-color: getColor('background-footer');
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
+}
+
+.page-footer__container {
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+
+.page-footer__wrapper {
+  @media screen and (min-width: 768px){
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
 }
 
 .page-address {
   margin-bottom: 60px;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-right: 70px;
+  }
 }
 
 .page-footer__logo {
@@ -76,21 +99,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 1200px){
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+    align-items: center;
+  }
 }
 
 .sign__title {
+  display: block;
   color: getColor('primary');
   margin-bottom: 20px;
 }
 
+
+
 .sign__label {
-  width: 100%;
   margin: 0;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 20px auto 0px;
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px){
+    width: 358px;
+  }
 }
 
 .sign__input {
   width: 100%;
   padding: 16px 15px;
+
   margin-bottom: 20px;
 
   color: getColor('primary');
@@ -98,6 +141,11 @@
   border: 1px solid getColor('footer-input-placeholder');
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
+  @media screen and (min-width: 1200px){
+    margin-bottom: 0;
+  }
+
 }
 
 .sign__input:placeholder-shown {
@@ -109,7 +157,7 @@
 }
 
 .sign__btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   min-width: 200px;
   padding: 10px 29px;
@@ -123,6 +171,10 @@
   border-radius: 4px;
   color: getColor('primary');
   background-color: getColor('accent');
+
+  @media screen and (min-width: 1200px){
+    margin-left: 12px;
+  }
 }
 
 .sign__icon {
