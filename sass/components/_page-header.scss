@@ -35,6 +35,11 @@
       display: none;
     }
   }
+
+  &:focus, 
+  &:hover {
+    fill: getColor('accent');
+}
 }
 
 .header-nav__list {
