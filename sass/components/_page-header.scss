@@ -113,7 +113,9 @@
   display: flex;
 
   @media screen and (max-width: 1199px){
-     margin-top: 10px;
+    &:not(:first-child) {
+    margin-top: 10px;
+    }
   }
 }
 
