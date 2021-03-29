@@ -829,6 +829,11 @@ p {
   letter-spacing: 0.03em;
 }
 
+.form-checkbox__contract:hover .form-checkbox__icon,
+.form-checkbox__contract:focus .form-checkbox__icon {
+  outline: 3px solid aqua;
+}
+
 .form__label {
   margin-bottom: 4px;
   font-weight: 400;
@@ -898,10 +903,6 @@ p {
   overflow: hidden;
 }
 
-.form-checkbox__check:hover, .form-checkbox__check:focus {
-  border: 2px solid #2196f3;
-}
-
 .form-checkbox__icon {
   display: inline-block;
   position: absolute;
@@ -919,10 +920,6 @@ p {
   border-radius: 3px;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-checkbox__icon:hover, .form-checkbox__icon:focus {
-  border: 2px solid #2196f3;
 }
 
 .form-checkbox__check:checked + .form-checkbox__icon {
