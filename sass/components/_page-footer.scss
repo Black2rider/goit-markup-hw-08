@@ -15,6 +15,8 @@
 }
 
 .page-footer__wrapper {
+  margin-bottom: 60px;
+
   @media screen and (min-width: 768px){
     display: flex;
     justify-content: space-around;
@@ -22,8 +24,11 @@
 }
 
 .page-address {
-  margin-bottom: 60px;
   text-align: center;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
@@ -66,10 +71,6 @@
 
 /* --- ПРИСОЕДИНЯЙТЕСЬ --- */
 
-.join {
-  margin-bottom: 60px;
-}
-
 .join__title {
   margin-bottom: 20px;
   color: getColor('primary');
@@ -102,8 +103,8 @@
   @media screen and (min-width: 1200px){
     flex-direction: row;
     margin-left: auto;
-    margin-right: 0;
-    text-align: right;
+    margin: 0;
+    text-align: start;
     align-items: flex-end;
   }
 }
@@ -112,12 +113,20 @@
   display: block;
   color: getColor('primary');
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 
 
 .sign__label {
-  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: getColor('grey');
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin: 20px auto 0px;

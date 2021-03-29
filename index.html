@@ -162,7 +162,7 @@
           <li class="team__item">
             <article class="team__card">
               <div class="team__tumb">
-                <img src="./images/team/team1.jpg" alt="Игорь Демьяненко" />
+                <img source="./images/team/team1.jpg 1x, ./images/team/team1@2x.jpg 2x" src="./images/team/team1.jpg" alt="Игорь Демьяненко" />
               </div>
               <div class="team__content">
                 <h3 class="team__name">Игорь Демьяненко</h3>
@@ -203,7 +203,7 @@
           <li class="team__item">
             <article class="team__card">
               <div class="team__tumb">
-                <img src="./images/team/team2.jpg" alt="Ольга Репина" />
+                <img source="./images/team/team2.jpg 1x, ./images/team/team2@2x.jpg 2x" src="./images/team/team2.jpg" alt="Ольга Репина" />
               </div>
               <div class="team__content">
                 <h3 class="team__name">Ольга Репина</h3>
@@ -244,7 +244,7 @@
           <li class="team__item">
             <article class="team__card">
               <div class="team__tumb">
-                <img src="./images/team/team3.jpg" alt="Николай Тарасов" />
+                <img source="./images/team/team3.jpg 1x, ./images/team/team3@2x.jpg 2x" src="./images/team/team3.jpg" alt="Николай Тарасов" />
               </div>
               <div class="team__content">
                 <h3 class="team__name">Николай Тарасов</h3>
@@ -285,7 +285,7 @@
           <li class="team__item">
             <article class="team__card">
               <div class="team__tumb">
-                <img src="./images/team/team4.jpg" alt="Михаил Ермаков" />
+                <img source="./images/team/team4.jpg 1x, ./images/team/team4@2x.jpg 2x" src="./images/team/team4.jpg" alt="Михаил Ермаков" />
               </div>
               <div class="team__content">
                 <h3 class="team__name">Михаил Ермаков</h3>
@@ -433,7 +433,7 @@
         </div>
       </div>
       <div class="sign">
-        <label for="sign-email" class="form__label sign__label">
+        <label for="sign-email" class="sign__label">
           <span class="content-title sign__title">Подпишитесь на рассылку</span>
           <input type="email" class="sign__input" id="sign-email" placeholder="E-mail" />
         </label>
@@ -459,7 +459,7 @@
         <p class="form__title">
           Оставьте свои данные, мы вам перезвоним
         </p>
-        <div class="form__fields">
+        
           <label for="username" class="form__label">Имя</label>
           <div class="form__content">
             <input type="text" class="form__input" id="username" />
@@ -467,9 +467,7 @@
               <use href="./images/sprite.svg#icon-person"></use>
             </svg>
           </div>
-        </div>
 
-        <div class="form__fields">
           <label for="telephone" class="form__label">Телефон</label>
           <div class="form__content">
             <input type="tel" class="form__input" id="telephone" />
@@ -477,9 +475,7 @@
               <use href="./images/sprite.svg#icon-phone"></use>
             </svg>
           </div>
-        </div>
 
-        <div class="form__fields">
           <label for="email" class="form__label">Почта</label>
           <div class="form__content">
             <input type="email" class="form__input" id="email" />
@@ -487,25 +483,21 @@
               <use href="./images/sprite.svg#icon-email-black"></use>
             </svg>
           </div>
-        </div>
 
-        <div class="form__fields">
+        
           <label for="feedback" class="form__label">Комментарий</label>
+          <textarea class="form__textarea form__placeholder" placeholder="Введите текст" id="feedback"></textarea>
+       
 
-          <textarea class="form__input form__placeholder" placeholder="Введите текст" id="feedback"></textarea>
-        </div>
-
-        <div class="form__fields">
           <label class="form-checkbox__contract" for="check">
             <input class="form-checkbox__check" type="checkbox" id="check" value="checked" checked />
             <svg class="form-checkbox__icon" width="16" height="15">
               <use href="./images/sprite.svg#icon-icon-check"></use>
             </svg>
-            <span class="form-checkbox__text">
-              Соглашаюсь с рассылкой и принимаю<span class="form-checkbox__excerpt">Условия договора</span>
-            </span>
+            <span class="form-checkbox__text"></span>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="form-checkbox__excerpt">Условия договора</a>
           </label>
-        </div>
         <button class="hero__btn modal__btn" type="submit">
           Отправить
         </button>

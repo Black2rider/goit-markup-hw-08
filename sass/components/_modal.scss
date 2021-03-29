@@ -3,7 +3,9 @@
   left: 50%;
   top: 50%;
 
+  width: 93.75vw;
   height: 90vh;
+  padding: 48px 40px;
   overflow-y: auto;
 
   background-color: getColor('primary');
@@ -23,7 +25,7 @@
   }
 
   @media screen and (min-width: 1200px){
-    width: 450px;
+    width: 528px;
   }
 }
 
