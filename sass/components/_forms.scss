@@ -97,6 +97,11 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+
+  &:hover,
+  &:focus {
+    border: 2px solid getColor('accent');;
+  }
 }
 
 .form-checkbox__icon {
@@ -109,12 +114,17 @@
   transform: translateY(-50%);
   border: 2px solid black;
   border-radius: 2px;
-
+  cursor: pointer;
 
   fill: getColor('primary');
   border: 2px solid getColor('secondary');
   border-radius: 3px;
   transition: fill 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    border: 2px solid getColor('accent');;
+  }
 
   .form-checkbox__check:checked + & {
     fill: getColor('accent');
@@ -140,6 +150,8 @@
   text-decoration: underline;
   padding-left: 2px;
   color: getColor('accent');
+  cursor: pointer;
+
 }
 
 .form__textarea {

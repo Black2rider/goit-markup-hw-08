@@ -879,6 +879,10 @@ p {
   overflow: hidden;
 }
 
+.form-checkbox__check:hover, .form-checkbox__check:focus {
+  border: 2px solid #2196f3;
+}
+
 .form-checkbox__icon {
   display: inline-block;
   position: absolute;
@@ -890,11 +894,16 @@ p {
           transform: translateY(-50%);
   border: 2px solid black;
   border-radius: 2px;
+  cursor: pointer;
   fill: #ffffff;
   border: 2px solid #212121;
   border-radius: 3px;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-checkbox__icon:hover, .form-checkbox__icon:focus {
+  border: 2px solid #2196f3;
 }
 
 .form-checkbox__check:checked + .form-checkbox__icon {
@@ -921,6 +930,7 @@ p {
   text-decoration: underline;
   padding-left: 2px;
   color: #2196f3;
+  cursor: pointer;
 }
 
 .form__textarea {
